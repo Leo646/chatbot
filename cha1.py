@@ -6,7 +6,7 @@ import json
 import re
 from flask import request
 # Importar
-modelo= 'BERT-Preguntas-Respuestas-Posgrados'
+modelo= 'leo123/BERT-Preguntas-Respuestas-Posgrados'
 model_preentrenado = BertForQuestionAnswering.from_pretrained(modelo)
 tokenizador = BertTokenizerFast.from_pretrained(modelo)
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
