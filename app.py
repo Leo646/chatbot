@@ -2,7 +2,7 @@ import os
 from tokenize import String
 from flask import Flask, jsonify, render_template
 from flask import request
-#from chat import get_response
+from chat import get_response
 
 import random
 
